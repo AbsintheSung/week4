@@ -1,0 +1,420 @@
+// .index-title {
+//   font-size: 100px;
+// }
+
+//大圖區
+.main-big-pic{
+  background-image: url('../../../assets/images/home-header.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  @include Large{
+    background-image: url('../../../assets/images/home-header-sm.png');
+  }
+}
+
+.big-pic-container{
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.big-pic-title{
+  padding-top: 296px;
+  padding: 296px 0px;
+  color:$fc-color1;
+  &__h1{
+    text-align: right;
+    @include Small{
+      font-size: 24px;
+    }
+    @include Phone{
+      font-size: 16px;
+    }
+  }
+
+  &__h2{
+    @include Small{
+      font-size: 40px;
+    }
+    @include Phone{
+      font-size: 24px;
+    }
+  }
+}
+
+
+.big-pic-btn{
+  margin-top: 4px;
+  text-align: right;
+ 
+  &__a{
+    display: inline-block;
+    background-color: $bg-primary;
+    font-size: 20px;
+    padding: 6px 12px;
+    color: $fc-secondary;
+  }
+}
+
+//用專業的心，做專業的事 區域
+.main-body{
+  padding-top:80px;
+  padding-bottom: 80px;
+  @include Phone{
+    padding-top:40px;
+    padding-bottom: 40px;
+  }
+}
+.main-h2{
+  text-align: center;
+  color:$fc-color1;
+  @include Phone{
+    font-size: 24px;
+  }
+}
+
+.maincard{
+  display: flex;
+  
+  &__item{
+    width:25%;
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 12px;
+
+    &__imgbox{
+      width: 100px;
+      height: 100px;
+      padding: 8.33px;
+      margin-bottom: 16px;
+      text-align: center;
+      >img{
+        width: 84px;
+      };
+    };
+
+    &__title{
+      color:$fc-color1;
+    };
+    &__body{
+      padding-top: 8px;
+    };
+
+    @include Medium{
+      width:50%;
+    }
+    @include Phone{
+      width:100%;
+      padding: 0px
+    }
+
+  };
+
+  &__item:first-child{
+    padding-left: 0px;
+  };
+
+  &__item:last-child{
+    padding-right: 0px;
+  };
+  
+  &__item:nth-child(2){
+    @include Medium{
+     padding-right: 0px;
+    }
+  }
+  &__item:nth-child(3){
+    padding-left: 0px;
+  }
+
+  
+  @include Medium{
+    flex-wrap: wrap;
+  }
+  
+}
+
+//經典系列鏡框區域
+.product{
+  // background: $bg-color1 ;
+  padding-bottom: 80px;
+  @include Large{
+    padding-bottom:56px;
+  }
+  @include Large{
+    padding-bottom:16px;
+  }
+}
+.product-title{
+  padding-top: 80px;
+  padding-bottom: 48px;
+  text-align: center;
+  color:$fc-color1;
+  @include Phone{
+    padding-top:40px ;
+    padding-bottom:24px ;
+    font-size:24px
+  }
+}
+
+.product__card{
+  display: flex;
+  align-items: center;
+  @include Large{
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  &__item{
+    width: 35%;
+    padding: 0px 12px;
+    @include Large{
+      width: 100%;
+      margin-bottom: 24px;
+    }
+
+    >img{
+      width: 416px; 
+    }
+    &__title{
+      margin-top: 8px;
+      text-align: center;
+      color:$fc-primary;
+      @include Phone{
+        font-size: 32px;
+      }
+    }
+
+  }
+  &__item:first-child{
+    padding-left: 0px;
+  }
+  &__item:last-child{
+    padding-right: 0px;
+  }
+}
+
+//聯名設計鏡框區
+.product2{
+  background-image: url('../../../assets/images/index-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  @include Medium{
+    padding-bottom: 56px;
+  } 
+  @include Phone{
+    padding-bottom: 16px;
+  }   
+}
+
+.product2-title{
+  padding-top: 80px;
+  padding-bottom: 48px;
+  text-align: center;
+  color:$fc-secondary;
+  @include Phone{
+    padding-top: 40px;
+    padding-bottom: 24px;
+    font-size: 24px;
+  }  
+}
+.product2__card{
+  display: flex;
+
+  &__item{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 80px;
+    &__title{
+      background-color: $bg-color1;
+      color:$fc-primary;
+      text-align: center;
+      padding: 8px 0px;
+    }
+
+    @include Medium{
+      width: 100%;
+      margin-bottom: 24px;
+    }  
+  }
+  @include Medium{
+    flex-wrap: wrap;
+    margin: 0 24px;
+    // margin-left: 24px;
+    // margin-right: 24px;
+  }
+  @include Phone{
+    margin:0px
+  }  
+
+}
+.phone-show{
+  display: none;
+  @include Phone{
+    display:block;
+  } 
+}
+.pc-show{
+  display:block;
+  @include Phone{
+    display: none;
+  } 
+  
+}
+
+
+//顧客推薦區
+.recommend{
+  padding: 80px 0;
+  
+  @include Medium{
+    padding-bottom: 56px;
+  }
+  @include Phone{
+    padding-top:40px;
+    padding-bottom: 24px;
+  }
+}
+.re-title{
+  margin-bottom: 48px;
+  text-align: center;
+  color:$fc-color1;
+  @include Phone{
+    margin-bottom: 24px;
+    font-size: 24px;
+  }
+}
+.re-box{
+  display: flex;
+  @include Medium{
+    flex-wrap: wrap;
+    justify-content: center
+  }
+}
+.re-card{
+  width: 25%;
+  margin: 0px 12px;
+  border-radius: 4px;
+  box-shadow: 0px 2px 6px #00000029;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &__title{
+    margin-top: 16px;
+    padding: 0px 16px;
+  }
+  &__body{
+    margin-top: 8px;
+    padding-bottom: 72px;
+    padding-left:16px;
+    padding-right: 16px;
+  }
+  &__footer{
+    margin-top: auto;
+    margin-bottom: 16px;
+    padding: 0px 16px;
+    color:$fc-color2;
+  }
+
+  @include Medium{
+    width: 45%;
+    margin-bottom: 24px;
+  }
+  @include Phone{
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 16px;
+  }
+
+}
+
+.re-card:first-child{
+  margin-left: 0px;
+}
+.re-card:last-child{
+  margin-right: 0px;
+}
+.re-card:nth-child(2){
+  @include Medium{
+    margin-right: 0px;
+  }
+  
+}
+.re-card:nth-child(3){
+  @include Medium{
+    margin-left: 0px;
+  }
+  
+}
+
+//聯絡我們區
+.contact{
+  padding: 80px 0px;
+}
+.contact-title{
+  color:$fc-color1;
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.form{
+  width: 50%;
+  margin: 0 auto;
+  &__title{
+    margin-bottom: 24px;
+  }
+  &__label{
+    display: block;
+  }
+  &__input{
+    width: 100%;
+    margin-top: 8px;
+    margin-bottom: 16px;
+    background-color: transparent;
+    padding: 6px 12px;
+    border: 1px solid #000000;
+  }
+  &__text{
+    width: 100%;
+    margin-top: 8px;
+    margin-bottom: 16px;
+    background-color: transparent;
+    padding: 6px 12px;
+    border: 1px solid #000000;
+    resize: none;
+    height: 136px;
+  }
+  &__btn{
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 416px;
+    color:$fc-secondary;
+    padding: 16px 0px;
+    background: $fc-primary ;
+  }
+
+  @include Small{
+    width: 100%;
+  }
+}
+
+.check-div{
+  display: flex;
+  align-items: start;
+  margin-bottom: 48px;
+}
+.checkbox{
+  margin: 4px;
+  width: 20px;
+  height: 20px;
+  background: #000;
+}
+

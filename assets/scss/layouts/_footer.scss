@@ -1,0 +1,152 @@
+// .footer{
+//   background: #69F0AE;
+//   font-size: 64px;
+// }
+.footer{
+    padding-top: 48px;
+    padding-bottom: 32px;
+
+     @include Small{
+        padding-top: 0px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
+        
+    }
+    // display: flex;
+    // flex-direction: column;
+}
+
+// 上
+.ft-navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include Small{
+        width: 50%;
+        justify-content:end;
+        align-items: start;
+     }
+}
+
+.ft-list{
+    display: flex;
+    
+    // align-items: center;
+    &__item{
+        padding: 0px 24px;
+
+        > a {
+            color:$fc-secondary;
+        }
+        @include Medium {
+            padding: 10px;
+        }
+    }
+    &__item:first-child{
+        padding-left: 0px;
+    }
+
+    @include Small{
+        display: none;
+    }
+}
+.ft-icon{
+    display: flex;
+    &__item{
+        width: 48px;
+        margin: 0px 16px;
+
+        > a{
+            display: block;   
+        }
+        @include Medium {
+            width: 40px;
+            margin: 0px 8px;
+        }
+        @include Small{
+            width: 24px;
+            margin: 24px 4px;
+        }
+    }
+    &__item:last-child{
+        margin-right: 0px;
+    }
+
+}
+
+
+//中
+
+
+.ft-contact{
+    @include Small{
+        width: 50%;
+    }
+}
+.contact-list{
+
+    margin-top: 24px;
+    margin-bottom: 32px;
+
+    &__item{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        color:$fc-secondary;
+        >a{
+            color:$fc-secondary;
+            margin-left: 20px;
+        }
+        @include Small{
+           font-size: 16px;
+        }
+    }
+
+}
+
+//下
+.ft-copyrught{
+    border-top:1px solid $fc-secondary ;
+    padding-top: 32px;
+    display: flex;
+    justify-content: space-between;
+    color:$fc-secondary;
+    // align-items: center;
+    @include Small{
+       width: 100%;
+       padding-top: 16px;
+       display: flex;
+       flex-wrap: wrap;
+    }
+}
+.copyrught{
+    @include Small{
+        width: 100%;
+     }
+}
+.copyrught-list{
+    display: flex;
+    &__item{
+        padding: 0 24px;
+        > a{
+            color:$fc-secondary;
+        }
+        @include Small{
+            padding: 4px 0px;
+        }
+    }
+    &__item:first-child{
+        @include Small{
+            padding-top: 8px;
+        }
+    }
+    &__item:last-child{
+        padding-right:0px;
+    }
+    @include Small{
+        width: 100%;
+        flex-direction: column;    
+    }
+
+}

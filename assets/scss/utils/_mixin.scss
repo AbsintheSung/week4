@@ -1,0 +1,27 @@
+@mixin Large{
+    //992px + 24
+    @media (max-width: ($Large + $hold-padding*2) ){
+        @content;
+    }
+}
+
+@mixin Medium{
+    //768px + 24
+    @media (max-width: ($Medium + $hold-padding*2) ){
+        @content;
+    }
+}
+
+@mixin Small{
+    //576px +24
+    @media (max-width: ($Small + $hold-padding*2) ){
+        @content;
+    }
+}
+
+@mixin Phone{
+    //374px + 24
+    @media (max-width: ($Phone + $hold-padding*2) ){
+        @content;
+    }
+}

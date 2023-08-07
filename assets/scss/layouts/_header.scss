@@ -1,0 +1,76 @@
+// .header{
+//   background: #69F0AE;
+//   font-size: 64px;
+// }
+.header{
+    padding-top: 16px;/*圖片距離 header 上邊界16px，下邊界15.43 取16*/
+    padding-bottom: 16px;
+    display: flex;
+    justify-content: space-between;
+    &__logo{
+        width: 80px;
+        >a{
+            display: block;
+        }
+        @include Small {
+            margin:16px;
+        }
+   
+    }
+    @include Small {
+        flex-wrap: wrap;
+        padding: 0px;
+    }
+}
+.navbar{
+    @include Small {
+        width: 100%;
+    }
+}
+
+.navlist{
+    display: flex;
+    align-items: center;
+    &__item{
+        padding: 9px 32px;
+
+        >a{
+            display: block;
+            color:$fc-secondary;
+            @include Small {
+                text-align: center;
+                
+             }
+        }
+        @include Small {
+            width: 50%;
+            border: 1px solid white;
+            
+            
+        }
+        @include Phone {
+            padding: 12px 0px;
+            
+        }
+    }
+
+    &__item:last-child{
+        padding-right: 0px;
+        @include Small {
+            padding-right:32px;
+        }
+        @include Phone {
+            padding-right: 0px;
+        }
+    }
+
+    @include Medium {
+        font-size: 16px;
+    }
+    
+    @include Small {
+       width: 100%;
+       display: flex;
+       flex-wrap: wrap;
+    }
+}
