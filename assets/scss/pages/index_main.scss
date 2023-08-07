@@ -4,13 +4,13 @@
 
 //大圖區
 .main-big-pic{
-  background-image: url('../../../assets/images/home-header.png');
+  background-image: url('../../assets/images/home-header.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 
   @include Large{
-    background-image: url('../../../assets/images/home-header-sm.png');
+    background-image: url('../../assets/images/home-header-sm.png');
   }
 }
 
