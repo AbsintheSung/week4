@@ -19,6 +19,7 @@
         position:relative;
         width: calc((100%) / 3);
         border: 1px solid #DCDCDC;
+        border-right:none;
         padding: 24px 0px;
         text-align: center;
         @include Medium{
@@ -35,6 +36,9 @@
             height: 8px;
             background-color: $fc-primary;
         }
+    }
+    &__item:last-child{
+        border-right:1px solid #DCDCDC;
     }
     &__item:hover{
         cursor: pointer;
@@ -149,7 +153,7 @@
 
     &__first,&__last{
         // padding: 12px;
-        outline: 1px solid #555555;
+        border: 1px solid #555555;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -165,7 +169,8 @@
     }
     &__item{
         // padding: 12px 16px;
-        outline: 1px solid #555555;
+        border: 1px solid #555555;
+        border-left: none;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -176,6 +181,9 @@
         }
        
        
+    }
+    &__item:nth-child(6){
+        border-right: none;
     }
     .hover-state:hover{
         cursor: pointer;
