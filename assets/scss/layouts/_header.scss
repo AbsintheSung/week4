@@ -37,10 +37,14 @@
         >a{
             display: block;
             color:$fc-secondary;
+            transition: .5s;
             @include Small {
                 text-align: center;
                 
              }
+        }
+        a:hover{
+            transform: scale(1.5);
         }
         @include Small {
             width: 50%;
