@@ -153,19 +153,14 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        > a{
-            padding: 12px;
-            color: black;
-            @include Medium{
-                
-            }   
-            @include Phone{
-                font-size: 16px;
-                padding: 6px;
-            }       
-        }
- 
-
+        padding: 12px;
+        @include Medium{
+            font-size: 16px;
+        }  
+        @include Phone{
+            padding: 6px;
+        }       
+        
  
     }
     &__item{
@@ -174,22 +169,25 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        > a{
-            padding: 12px 16px;
-            color: black;
-            @include Medium{
-                // font-size: 16px;
-            }
-            @include Phone{
-                font-size: 16px;
-                padding: 6px 10px;
-            }
-
+        padding: 12px 16px;
+        @include Phone{
+            font-size: 16px;
+            padding: 6px 10px;
         }
        
+       
     }
-    >li:hover{
-        background-color: #F2F2F2;
+    .hover-state:hover{
+        cursor: pointer;
+        background: #F2F2F2 ;
+        color:#000000 ;
     }
 
 }
+
+//透過js操控
+.btn-state{
+    background: #000000 ;
+    color:#FFFFFF ;
+}
+
