@@ -1,5 +1,3 @@
-# 網頁切版直播班 Vite 範例
-
 ## Node.js 版本
   - 專案的 Node.js 版本需為 v16 以上
   - 查看自己版本指令：`node -v`
@@ -11,7 +9,7 @@
   - 若沒有自動開啟瀏覽器，可嘗試手動在瀏覽器上輸入
     `http://localhost:5173/<專案名稱>/pages/index.html`
 - `npm run build` - 執行編譯模式（不會開啟瀏覽器）
-- `npm ru deploy` - 自動化部署
+- `npm run deploy` - 自動化部署
 
 ## 資料夾結構
   - assets # 靜態資源放置處
